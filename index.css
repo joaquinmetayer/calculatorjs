@@ -1,0 +1,79 @@
+*{
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+}
+body{
+    margin: 0;
+    background-color: #eaeaea;
+}
+a{
+    color: #e24911;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    height: 100vh;
+}
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: 160px repeat(5, 70px);
+    background-color: #565656;
+    border: 1px solid #565656;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px #00000020;
+}
+button{
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1.6em;
+    border: 1px solid #565656;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px -3px #00000060, -5px -5px 15px 3px #b6b6b61f;
+}
+button:active{
+    background-color: #e6e6e6;
+}
+.operator{
+    background-color: #f96f3d;
+    color: #fff;
+}
+.operator:active{
+    background-color: #e66738;
+}
+.button-gray{
+    background-color: #d5d5d5;
+}
+button:focus{
+    outline: none;
+}
+.col-2{
+    grid-column: span 2;
+}
+.display{
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #1f2a33;
+    border: 1px solid #565656;
+    color: #fff;
+    border-radius: 10px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+}
+#actual-value{
+    font-size: 1.6em;
+}
+
+#last-value {
+    font-size: 2em;
+}
